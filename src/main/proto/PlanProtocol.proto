@@ -172,6 +172,8 @@ message PlanHeader
 	//only used during actual execution, not populated by optimizer/plangen
 	//defines the compute configuration to be used for query
 	map<uint32, ExecutionClusters> compute_configuration = 26;
+        uint64 psoThreshold = 28; 
+        double heuristicCost = 29;
 }
 
 //The actual plan sent by the command compiler
